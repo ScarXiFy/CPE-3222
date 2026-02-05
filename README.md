@@ -1,2 +1,12 @@
 # CPE-3222
-CPE WebDev
+
+CPE 3222
+
+
+Lauron, John Enrico D.
+
+
+BS CpE - 3
+
+
+CPE 3222 - WEB DEVELOPMENT
