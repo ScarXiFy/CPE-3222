@@ -1,5 +1,5 @@
 <?php
-    $creditCardNumber = "1234  5678  9101  1213";
+    $creditCardNumber = "1234 - 5678 - 9101 - 1213";
     echo "Credit Card Number: " . $creditCardNumber . "<br>";
 
     // Removing the dashes and spaces from the credit card number
