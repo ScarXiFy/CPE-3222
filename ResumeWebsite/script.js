@@ -1,8 +1,3 @@
-/* =============================================
-   Enricode — script.js
-   ============================================= */
-
-/* ---------- Dark Mode Toggle ---------- */
 const darkToggleBtn = document.getElementById('dark-toggle');
 const prefersDark = localStorage.getItem('theme') === 'dark';
 
@@ -21,7 +16,6 @@ if (darkToggleBtn) {
   if (prefersDark) darkToggleBtn.innerHTML = '<i class="fa fa-sun-o"></i>';
 }
 
-/* ---------- Scroll-Triggered Fade-In ---------- */
 const fadeEls = document.querySelectorAll('.card, .achievement-item');
 
 const fadeObserver = new IntersectionObserver((entries) => {
@@ -38,7 +32,6 @@ fadeEls.forEach(el => {
   fadeObserver.observe(el);
 });
 
-/* ---------- Skill Bar Animation ---------- */
 const skillFills = document.querySelectorAll('.skill-fill, .lang-fill');
 
 const skillObserver = new IntersectionObserver((entries) => {
@@ -60,7 +53,6 @@ const skillObserver = new IntersectionObserver((entries) => {
 
 skillFills.forEach(el => skillObserver.observe(el));
 
-/* ---------- Back-to-Top Button ---------- */
 const backBtn = document.getElementById('back-to-top');
 
 if (backBtn) {
@@ -73,7 +65,6 @@ if (backBtn) {
   });
 }
 
-/* ---------- Active Nav Link on Scroll ---------- */
 const sections = document.querySelectorAll('[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
 
@@ -90,7 +81,6 @@ window.addEventListener('scroll', () => {
   });
 });
 
-/* ---------- Card Tilt Effect ---------- */
 document.querySelectorAll('.content-card').forEach(card => {
   card.addEventListener('mousemove', (e) => {
     const rect = card.getBoundingClientRect();
@@ -107,7 +97,6 @@ document.querySelectorAll('.content-card').forEach(card => {
   });
 });
 
-/* ---------- Email Copy to Clipboard ---------- */
 document.querySelectorAll('.email-copy').forEach(el => {
   el.style.cursor = 'pointer';
   el.title = 'Click to copy email';
@@ -126,14 +115,12 @@ document.querySelectorAll('.email-copy').forEach(el => {
   });
 });
 
-/* ---------- Typewriter Restart (JS fallback) ---------- */
 const typingEl = document.querySelector('.typing');
 if (typingEl) {
   const text = typingEl.textContent;
   typingEl.setAttribute('data-text', text);
 }
 
-/* ---------- Navbar Hide/Show on Scroll ---------- */
 let lastScroll = 0;
 const nav = document.querySelector('.top-nav');
 

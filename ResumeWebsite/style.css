@@ -22,9 +22,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-/* =============================================
-   DARK MODE
-   ============================================= */
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
@@ -81,9 +78,6 @@ body.dark-mode .back-to-top {
   border-color: #009688;
 }
 
-/* =============================================
-   PARALLAX HERO
-   ============================================= */
 .parallax-hero {
   position: relative;
   min-height: 100vh;
@@ -125,7 +119,6 @@ body.dark-mode .back-to-top {
   text-align: left;
 }
 
-/* Hero Buttons */
 .hero-buttons {
   display: flex;
   gap: 20px;
@@ -168,9 +161,6 @@ body.dark-mode .back-to-top {
   animation: typing 9s steps(39) infinite, blink-caret 1s infinite;
 }
 
-/* =============================================
-   PAGE LAYOUT
-   ============================================= */
 .page-container {
   max-width: 1200px;
   margin: 60px auto 40px;
@@ -188,9 +178,6 @@ body.dark-mode .back-to-top {
   flex-direction: column;
 }
 
-/* =============================================
-   CARDS
-   ============================================= */
 .card {
   background: #fafafa;
   border: 1px solid #e0e0e0;
@@ -203,7 +190,6 @@ body.dark-mode .back-to-top {
 
 .content-card {
   padding-bottom: 10px;
-  /* tilt transition handled inline by JS */
   will-change: transform;
   transition: transform 0.1s ease;
 }
@@ -212,9 +198,6 @@ body.dark-mode .back-to-top {
   padding: 16px 20px;
 }
 
-/* =============================================
-   FADE-IN ANIMATION (JS-driven)
-   ============================================= */
 .fade-in {
   opacity: 0;
   transform: translateY(24px);
@@ -226,9 +209,6 @@ body.dark-mode .back-to-top {
   transform: translateY(0);
 }
 
-/* =============================================
-   PROFILE SECTION
-   ============================================= */
 .image-container {
   position: relative;
   padding-top: 20px;
@@ -256,9 +236,6 @@ body.dark-mode .back-to-top {
   font-size: 1.4rem;
 }
 
-/* =============================================
-   TEXT & ICONS
-   ============================================= */
 .text-grey {
   color: #666;
 }
@@ -288,9 +265,6 @@ body.dark-mode .back-to-top {
   margin: 4px 0;
 }
 
-/* =============================================
-   EMAIL COPY
-   ============================================= */
 .email-copy {
   cursor: pointer;
   transition: color 0.2s;
@@ -301,9 +275,6 @@ body.dark-mode .back-to-top {
   color: #009688;
 }
 
-/* =============================================
-   SKILLS
-   ============================================= */
 .skill-bar {
   background: #e0e0e0;
   border-radius: 4px;
@@ -316,10 +287,9 @@ body.dark-mode .back-to-top {
 .skill-fill {
   background: #333;
   height: 100%;
-  width: 0; /* starts at 0, animated by JS */
+  width: 0;
 }
 
-/* LANGUAGES */
 .lang-bar {
   background: #e0e0e0;
   border-radius: 4px;
@@ -332,16 +302,13 @@ body.dark-mode .back-to-top {
 .lang-fill {
   background: #333;
   height: 100%;
-  width: 0; /* starts at 0, animated by JS */
+  width: 0;
 }
 
 .lang-fill.small {
   width: 20%;
 }
 
-/* =============================================
-   FOOTER
-   ============================================= */
 .footer {
   background: #000;
   color: #fff;
@@ -371,9 +338,6 @@ body.dark-mode .back-to-top {
   margin-top: 8px;
 }
 
-/* =============================================
-   PROJECT TECH ICONS
-   ============================================= */
 .project-tech-icons {
   display: flex;
   gap: 15px;
@@ -400,9 +364,6 @@ body.dark-mode .back-to-top {
 .project-tech-icons i.devicon-html5-plain:hover       { color: #E34F26; }
 .project-tech-icons i.fa-microchip:hover              { color: #009688; }
 
-/* =============================================
-   NAVIGATION BAR
-   ============================================= */
 .top-nav {
   background: #000;
   color: #fff;
@@ -450,9 +411,6 @@ body.dark-mode .back-to-top {
   color: #009688;
 }
 
-/* =============================================
-   DARK MODE TOGGLE BUTTON
-   ============================================= */
 .dark-toggle-btn {
   background: transparent;
   border: 1px solid #555;
@@ -470,9 +428,6 @@ body.dark-mode .back-to-top {
   border-color: #009688;
 }
 
-/* =============================================
-   BACK TO TOP BUTTON
-   ============================================= */
 .back-to-top {
   position: fixed;
   bottom: 30px;
@@ -506,9 +461,6 @@ body.dark-mode .back-to-top {
   background: #00796b;
 }
 
-/* =============================================
-   EXPERIENCE LIST STYLES
-   ============================================= */
 .experience-list {
   list-style-type: none;
   padding-left: 0;
@@ -530,7 +482,6 @@ body.dark-mode .back-to-top {
   font-size: 1.2rem;
 }
 
-/* EXPERIENCE TECH ICONS */
 .experience-tech-icons {
   display: flex;
   gap: 15px;
@@ -564,9 +515,6 @@ body.dark-mode .back-to-top {
 .experience-tech-icons i.devicon-wix-original:hover           { color: #0C6EFC; }
 .experience-tech-icons i.devicon-shopify-plain:hover          { color: #7AB55C; }
 
-/* =============================================
-   ACHIEVEMENT ITEMS
-   ============================================= */
 .achievement-item {
   display: flex;
   gap: 15px;
@@ -596,9 +544,6 @@ body.dark-mode .back-to-top {
   font-size: 0.95rem;
 }
 
-/* =============================================
-   RESPONSIVE DESIGN
-   ============================================= */
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr;
@@ -638,9 +583,6 @@ body.dark-mode .back-to-top {
   }
 }
 
-/* =============================================
-   ANIMATIONS
-   ============================================= */
 @keyframes fade {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.3; }
